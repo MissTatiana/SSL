@@ -1,0 +1,296 @@
+/*	=	=	=	=	=	=	=	=	= counter-reset: =	=	=	=	=	=	*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+ *COLORS*
+ *blue-ish - 2b3d51
+ * grey blue - 99aec3
+ * pruple - 47324f
+ * dark purple - 2e263e
+ */
+
+/*	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	
+ * 														Regular Styles
+ * 	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/
+
+
+body {
+	text-align: center;
+	background: url(../images/background.png);
+	font-size: 62.5%;
+}
+
+.wrap{
+	width: 960px; 
+	margin: 0 auto;
+	text-align: left;
+	background: rgba(44, 38, 62, .6);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+p, li, label {
+	font-size: 1.400em; /*14px*/
+	color: #99aec3;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #99aec3;
+}
+
+a:hover {
+	color: #47324f;
+	text-decoration: underline;
+}
+
+h3 {
+	color: #2e263e;
+	font-size: 2.000em;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	padding: 5px;
+}
+
+/*	=	=	=	=	=	=	=	=	=	=	=	=	Button 	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/
+
+
+button {
+	font-weight:normal;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:0px solid #2b3d51;
+	padding:7px 18px;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #a799c2), color-stop(100%, #412b4f) );
+	background:-moz-linear-gradient( center top, #a799c2 5%, #412b4f 100% );
+	background:-ms-linear-gradient( top, #a799c2 5%, #412b4f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a799c2', endColorstr='#412b4f');
+	background-color:#a799c2;
+	color:#d1c7e0;
+	display:inline-block;
+}
+
+button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #412b4f), color-stop(100%, #a799c2) );
+	background:-moz-linear-gradient( center top, #412b4f 5%, #a799c2 100% );
+	background:-ms-linear-gradient( top, #412b4f 5%, #a799c2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#412b4f', endColorstr='#a799c2');
+	background-color:#412b4f;
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+/*	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	
+ * 														Header/Navigation
+ * 	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/
+
+#header {
+	background: rgba(71, 50, 79, .6);
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 20px;	
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	height: 150px;
+}
+
+#header img {
+	margin-left: 30px;
+	margin-right: 300px;
+	float: left;
+	clear: left;
+}
+
+#topBtns {
+	padding-top: 20px;
+}
+
+#navigation ul {
+	position: relative;
+	text-align: center;
+	margin-top: 60px;
+	margin-left: 350px;
+}
+
+#navigation ul li {
+	display: inline;
+	float: left;
+	width: 15%;	
+}
+
+/*	=	=	=	=	=	=	=	=	=	=	=	Login	=	=	=	=	=	=	=	=	=	=	=	*/
+
+#login label {
+	display: inline;
+	font-size: 1.200em;
+}
+
+#login input {
+	height: 10px;
+}
+
+#lun {
+	float: left;
+	margin-right: 5px;
+}
+
+#loginBlock {
+	margin-bottom: 5px;
+}
+
+#linkBlock {
+	margin-left: 705px;
+}
+
+#login button {
+	font-weight:normal;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:0px solid #2b3d51;
+	padding:3px 14px;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #a799c2), color-stop(100%, #412b4f) );
+	background:-moz-linear-gradient( center top, #a799c2 5%, #412b4f 100% );
+	background:-ms-linear-gradient( top, #a799c2 5%, #412b4f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a799c2', endColorstr='#412b4f');
+	background-color:#a799c2;
+	color:#d1c7e0;
+	display:inline-block;
+}
+
+/*	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	
+ * 														Body Content
+ * 	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/
+
+/*	=	=	=	=	=	=	=	=	Section1	=	=	=	=	=	=	=	=	*/
+
+#section1a {
+	margin: 10px 0 0 20px;
+}
+
+#s1ap {
+	float: left;
+	width: 400px;
+	margin: 10px 5px 0 0;
+}
+
+/*	=	=	=	=	=	=	=	=	Section2	=	=	=	=	=	=	=	=	*/
+
+#section2 {
+	margin: 50px 0 200px 20px;
+}
+
+/*	=	=	=	=	=	=	Register	=	=	=	=	=	=	*/
+#register {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 400px;
+	float: left;
+}
+
+#register label {
+	display: block;
+	padding: 3px;
+}
+
+#register input {
+	width: 150px;
+}
+
+#first, #pass {
+	float: left;
+	margin-right: 5px;
+}
+
+#s2bp {
+	margin: 30px 30px 0 0;
+}
+
+#register button {
+	margin: 10px 0 0 240px;
+}
+
+/*	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	
+ * 														Footer
+ * 	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/
+
+#footer {
+	background: rgba(71, 50, 79, .6);
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	height: 75px;
+	text-align: center;
+}
+
+#bottomNavigation ul {
+	position: relative;
+	text-align: center;
+	margin-left: 400px;
+}
+
+#bottomNavigation ul li {
+	display: inline;
+	float: left;
+	width: 10%;
+	
+}
+
+#copyright p {
+	margin-top: 30px;
+	font-size: 1.000em;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
